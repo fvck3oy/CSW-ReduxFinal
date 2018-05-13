@@ -1,39 +1,30 @@
 import axios from 'axios'
-const API_URL = 'http://localhost:7777/api/sport';
+const API_URL = 'http://localhost:7777/api/curriculums';
 
-//Read
-export function getSport() {
+///Function GET
+export function getCurriculums() {
   const response = axios.get(API_URL);
-  console.log('getsport', response);
+  console.log('Get Curriculums', response);
   return{
-    type: 'GET_SPORT',
+    type: 'GET_CURRICULUMS',
     payload: response
   }
 }
 
-//CREATE
-export function createSport(data) {
+//Function CREATE
+export function createCurriculums(data) {
   const response = axios.post(API_URL, data);
   return {
-    type: 'GET_SPORT',
+    type: 'GET_CURRICULUMS',
     payload: response
   }
 }
 
-//DELETE
-export function deleteSport(id) {
+//Function DELETE
+export function deleteCurriculums(id) {
   const response = axios.delete(API_URL + '/' + id);
   return {
-    type: 'GET_SPORT',
-    payload: response
-  }
-}
-
-//Update
-export function updateSport(id,data) {
-  const response = axios.put(API_URL + '/' +id , data)
-  return {
-    type: 'GET_SPORT',
+    type: 'GET_CURRICULUMS',
     payload: response
   }
 }

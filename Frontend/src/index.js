@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 import Promise from 'redux-promise';
 import { Provider } from 'react-redux';
@@ -17,4 +16,3 @@ ReactDOM.render(
   <App />
   </Provider>
   , document.getElementById('root'));
-registerServiceWorker();
