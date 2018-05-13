@@ -6,4 +6,4 @@
 
 ###### วิธีการใช้งาน
 * Backend ใช้คำสั่ง npm i ตามด้วย node index
-* Frontend ใช้คำสั่ง npm i ตามด้วย npmm start
+* Frontend ใช้คำสั่ง npm i ตามด้วย npm start
